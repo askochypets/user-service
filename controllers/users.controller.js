@@ -14,13 +14,11 @@ export default {
 
   addUser: async (req, res) => {
     const userToAdd = User({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      address: req.body.address,
-      city: req.body.city,
-      email: req.body.email,
-      phone: req.body.phone,
-      notes: req.body.notes,
+      name: req.body.name,
+      position: req.body.position,
+      birthdate: req.body.birthdate,
+      description: req.body.description,
+      worksRemotely: req.body.worksRemotely,
     });
     try {
       const result = await User.addUser(userToAdd);
