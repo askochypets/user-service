@@ -6,7 +6,7 @@ const UserSchema = mongoose.Schema(
     position: { type: String, required: true },
     birthdate: { type: String, required: true },
     description: { type: String },
-    worksRemotely: { type: String },
+    worksRemotely: { type: Number },
   },
   { collection: 'User' },
 );
